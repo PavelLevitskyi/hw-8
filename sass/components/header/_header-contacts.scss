@@ -1,0 +1,39 @@
+.page-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  & li:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.page-contacts__link {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  color: $text-color;
+
+  transition: color $transition-seting;
+
+  &:hover,
+  &:focus {
+    color: $hover-allblue;
+  }
+
+  &:hover .page-contacts__icon,
+  &:focus .page-contacts__icon {
+    fill: $hover-allblue;
+  }
+}
+
+.page-contacts__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  margin-right: 10px;
+
+  fill: $svg-color;
+  transition: fill $transition-seting;
+}

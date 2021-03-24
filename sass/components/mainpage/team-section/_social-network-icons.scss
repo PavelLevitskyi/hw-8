@@ -1,0 +1,37 @@
+.team-social {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $white-color;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &__icon {
+    margin: auto;
+    fill: currentColor;
+  }
+}
+
+.team-social__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $svg-color;
+
+  transition: color $transition-seting, background-color $transition-seting;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $hover-allblue;
+  }
+}

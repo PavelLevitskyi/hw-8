@@ -1,0 +1,27 @@
+.page {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid rgba(236, 236, 236, 1);
+
+  &-container {
+    display: flex;
+    width: 1200px;
+
+    padding: 0px 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo {
+  margin-right: 92px;
+
+  &-part {
+    color: $hover-allblue;
+  }
+}

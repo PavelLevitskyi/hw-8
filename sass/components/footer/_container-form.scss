@@ -1,0 +1,76 @@
+.footer-form {
+  max-width: 570px;
+  margin-left: auto;
+
+  &__signup {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.footer-form__title {
+  margin-bottom: 20px;
+
+  color: $white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-form__input {
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 16px;
+
+  color: $footer-link;
+  background-color: $background-black;
+
+  border: 1px solid $footer-placeholder;
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color $transition-seting;
+
+  &:hover,
+  &:focus {
+    border-color: $hover-allblue;
+  }
+}
+
+.footer-form__butn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $hover-allblue;
+  color: $white-color;
+  padding: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  margin-left: 12px;
+
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Roboto;
+  font-weight: 700;
+
+  border-radius: 4px;
+
+  transition: box-shadow $transition-seting;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.footer-form__icon {
+  margin-left: 10px;
+}
