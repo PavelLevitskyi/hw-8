@@ -418,6 +418,10 @@ h3 {
   }
 }
 
+.skills__list {
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   .skills__list {
     display: -webkit-box;
