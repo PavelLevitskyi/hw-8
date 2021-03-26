@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
             
                 <ul class="page-nav__list">
                     <li class="page-nav__item">
-                        <a class="page-nav__link current" href="">Студия</a>
+                        <a class="page-nav__link current" href="/index.html">Студия</a>
                     </li>
                     <li class="page-nav__item">
                         <a class="page-nav__link" href="./portpholio.html">Портфолио</a>
@@ -58,6 +58,15 @@
                     </a>
                 </li>
             </ul>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="24px" height="16px">
+                    <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
+                </svg>
+            </button>
+
+
+        
             
         </div>       
 
@@ -91,13 +100,15 @@
                     <ul class="skills__list">
 
                         <li class="skills__item">
-                            <div class="skills__box">
-                                <svg class="skills__icon" width="65px" height="70px">
-                                  <use href="./img/symbol-defs.svg#icon-details-1"></use>
-                                </svg>
-                           </div>
+
+                             <div class="skills__box">
+                                 <svg class="skills__icon" width="65px" height="70px">
+                                     <use href="./img/symbol-defs.svg#icon-details-1"></use>
+                                 </svg>
+                            </div>
                             <h3 class="skills__title">Внимание к деталям</h3>
                             <p class="skills__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                           
                         </li>
 
                         <li class="skills__item">
@@ -137,7 +148,7 @@
                             <p class="skills__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 
                         </li>
-                    </ul>__
+                    </ul>
                 </div>
               
             </section>
@@ -218,7 +229,7 @@
 
                            <div class="team__tumb">
 
-                                <img class="personal-foto" src="./img/photo1.jpg" alt="">
+                                <img class="personal-foto" src="./img/photo1.jpg" srcset="./img/photo1.jpg 1x, ./img/photo1@2x 2x .jpg" alt="our-workers">
                              
 
                            </div>
@@ -284,7 +295,7 @@
                            
                             <div class="team__tumb">
 
-                                <img class="personal__foto" src="./img/photo2.jpg" alt="">
+                                <img class="personal__foto" src="./img/photo2.jpg" srcset="./img/photo2.jpg 1x, ./img/photo2@2x 2x .jpg" alt="our-workers">
                                                                
                             </div>
 
@@ -349,7 +360,7 @@
 
                             <div class="team__tumb">
 
-                                    <img class="personal-foto" src="./img/photo3.jpg" alt="">
+                                    <img class="personal-foto" src="./img/photo3.jpg" srcset="./img/photo3.jpg 1x, ./img/photo1@3x 2x .jpg" alt="our-workers">
                                    
                             </div>     
                             
@@ -413,7 +424,7 @@
                            
                             <div class="team__tumb">
 
-                                <img class="personal-foto" src="./img/photo4.jpg" alt="">
+                                <img class="personal-foto" src="./img/photo4.jpg" srcset="./img/photo4.jpg 1x, ./img/photo4@2x 2x .jpg" alt="our-workers">
                             
                             </div>
 
@@ -576,19 +587,21 @@
 
               <!-- footer-contain -->
 
-               <div class="footer-contacts">
+             <div class=" footer__position">
+                 
+                <div class="footer-contacts">
                     <a class="logo" href="./">
-                    
+                
                         <span class="logo-part">Web</span>Studio
                     </a>
-                    
+                
                     <address class="footer-contacts__textstyle">
-                    
+                
                         <ul class="footer-contacts__list">
                             <li class="footer-contacts__item">
                                 <p class="footer-contacts__link adress">г. Киев, пр-т Леси Украинки, 26</p>
-                    
-                    
+                
+                
                             </li>
                             <li class="footer-contacts__item">
                                 <a class="footer-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -598,64 +611,65 @@
                             </li>
                         </ul>
                     </address>
-
-               </div>
-
+                
+                </div>
+                
                 <!-- footer-contain2 -->
-
-                 <div class="footer-social__container">
+                
+                <div class="footer-social__container">
                     <h2 class="footer-social__title"> ПРИСОЕДИНЯЙТЕСЬ</h2>
-                    
+                
                     <ul class="footer-social__list">
-                    
+                
                         <li class="footer-social__item">
-                    
+                
                             <a href="" class="footer-social__link">
                                 <svg class="footer-social__icon" width="20px" height="20px">
                                     <use href="./img/symbol-defs.svg#icon-instagram-1"></use>
                                 </svg>
                             </a>
-                    
+                
                         </li>
-                    
+                
                         <li class="footer-social__item">
-                    
+                
                             <a href="" class="footer-social__link">
                                 <svg class="footer-social__icon" width="20px" height="20px">
                                     <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
-                    
+                
                         </li>
-                    
+                
                         <li class="footer-social__item">
-                    
-                    
+                
+                
                             <a href="" class="footer-social__link">
-                    
+                
                                 <svg class="footer-social__icon" width="20px" height="20px">
                                     <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
                                 </svg>
-                    
+                
                             </a>
-                    
+                
                         </li>
-                    
+                
                         <li class="footer-social__item">
-                    
+                
                             <a href="" class="footer-social__link">
-                    
+                
                                 <svg class="footer-social__icon" width="20px" height="20px">
                                     <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
                                 </svg>
-                    
+                
                             </a>
-                    
+                
                         </li>
-                    
+                
                     </ul>
-                 </div>
+                </div>
 
+             </div>
                  <!-- foter-contain3 -->
                  
                  <div class="footer-form">
@@ -782,7 +796,92 @@
 
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+        <button class="menu-toggle js-close-menu">
+
+            <svg class="menu-icon" width="19px" height="19px">
+                <use href="./img/symbol-defs.svg#icon-cherch" ></use>
+            </svg>
+
+        </button>
+
+        <ul class="menu-nav">
+
+            <li class="menu-nav__item">
+
+                <a class="menu-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-nav__item">
+                
+                <a class="menu-nav__link" href="./portpholio.html">Портфолио</a>
+            </li>
+            <li class="menu-nav__item">
+
+                <a class="menu-nav__link" href="">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="menu-contacts">
+
+            <li class="menu-contacts__item">
+
+                <a class="menu-contacts__link accent" href="+38-096-111-11-11">
+                    +38 096 111 11 11
+                </a>
+               
+            </li>
+            <li class="menu-contacts__item">
+
+                <a class="menu-contacts__link" href="info@devstudio.com">
+                    info@devstudio.com
+                </a>
+
+            </li>
+        </ul>
+    
+        <ul class="menu-social">
+
+            <li class="menu-social__item">
+
+                <a class="menu-social__links" href="">Instagram
+                    <span class="menu-social__deco">|</span>
+                </a>
+
+            </li>
+
+            <li class="menu-social__item">
+
+               <a class="menu-social__links" href="">Twitter
+                <span class="menu-social__deco">|</span>
+               </a>
+
+            </li>
+            <li class="menu-social__item">
+
+              <a class="menu-social__links" href="">Facebook
+                <span class="menu-social__deco">|</span>
+              </a>
+
+            </li>
+
+            <li class="menu-social__item">
+
+              <a class="menu-social__links" href="">LinkedIn
+                <span class="menu-social__deco">|</span>
+              </a>
+
+            </li>
+
+        </ul>
+    
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>    
 
 </body>
 </html>

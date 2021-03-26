@@ -1,16 +1,20 @@
 .footer-form {
-  max-width: 570px;
-  margin-left: auto;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 570px;
+    margin-left: auto;
+  }
 
   &__signup {
-    display: flex;
-    margin-left: auto;
+    margin-top: 20px;
   }
 }
 
 .footer-form__title {
-  margin-bottom: 20px;
-
   color: $white-color;
 
   font-weight: 700;
@@ -19,7 +23,7 @@
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -38,6 +42,10 @@
 
   transition: border-color $transition-seting;
 
+  @media (min-width: 678px) {
+    width: 450px;
+  }
+
   &:hover,
   &:focus {
     border-color: $hover-allblue;
@@ -54,7 +62,9 @@
   padding: 10px;
   padding-left: 29px;
   padding-right: 28px;
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 16px;
   line-height: 30px;

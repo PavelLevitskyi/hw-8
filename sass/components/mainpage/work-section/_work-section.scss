@@ -1,4 +1,7 @@
 .work {
+  @media (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -47,11 +50,10 @@
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+  text-align: center;
 }
 
 .work__title {
-  text-align: center;
   margin-bottom: 50px;
 
   color: $teg-h-navigation;

@@ -1,19 +1,33 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 0;
+  }
 
   &__card {
     position: relative;
-
-    flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
-    margin-left: 30px;
 
     overflow: hidden;
     border: 1px solid $portpholio-border;
+
+    @media (min-width: 768px) {
+      margin-left: 30px;
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @media (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
   }
 
   &__description {
@@ -37,6 +51,7 @@
 
 .project__tumb {
   position: relative;
+  height: 294px;
 
   &::before {
     $background-color: rgba(33, 150, 243, 0.9);
@@ -60,6 +75,7 @@
     display: block;
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -80,10 +96,21 @@
   font-size: 18px;
   line-height: 28px;
   color: $white-color;
-  padding: 63px 24px;
   opacity: 0;
   transform: translateY(100%);
   transition: color $transition-seting, transform $transition-seting;
+
+  @media (max-width: 767px) {
+    padding: 77px 24px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 
   .projects__card:hover &,
   .projects__card:focus & {

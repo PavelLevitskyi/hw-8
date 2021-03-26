@@ -1,15 +1,25 @@
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
+  @media (min-width: 768px) {
+    max-width: 768px;
+    margin-left: auto;
+    min-width: 231px;
+  }
 
   &__textstyle {
     font-style: normal;
   }
 }
 
+.footer-contacts__list li:not(:first-child) {
+  @media (max-width: 1199px) {
+    margin-top: 8px;
+  }
+}
+
 .footer-contacts__list li:not(:last-child) {
-  margin-bottom: 9px;
+  @media (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts__link {

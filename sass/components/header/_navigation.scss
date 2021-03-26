@@ -8,8 +8,12 @@
 }
 
 .page-nav__list {
+  @media (max-width: 767px) {
+    display: none;
+  }
   display: flex;
   margin: 0 auto;
+  margin-left: 88px;
 
   & li:not(:first-child) {
     margin-left: 50px;
@@ -38,7 +42,7 @@
   &::after {
     content: '';
     position: absolute;
-    transform: translateY(45px);
+
     display: block;
     width: 100%;
     height: 4px;
@@ -48,6 +52,14 @@
 
     opacity: 0;
     transition: opacity $transition-seting, color $transition-seting;
+
+    @media (max-width: 1199px) {
+      transform: translateY(54px);
+    }
+
+    @media (min-width: 1200px) {
+      transform: translateY(44px);
+    }
   }
 
   &:hover::after {

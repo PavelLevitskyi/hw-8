@@ -2,16 +2,38 @@
   background-color: $background-black;
 
   &__container {
-    display: flex;
-    width: 1200px;
     padding: 60px 15px;
     margin-left: auto;
     margin-right: auto;
-    align-items: baseline;
+
+    @media (max-width: 767px) {
+      text-align: center;
+      min-width: 320px;
+      max-width: 767px;
+    }
+    @media (min-width: 768px) {
+      max-width: 1199px;
+    }
+    @media (min-width: 1200px) {
+      display: flex;
+      width: 1200px;
+      align-items: baseline;
+    }
   }
 
   & .logo {
     margin-bottom: 20px;
     color: $white-color;
+  }
+
+  &__position {
+    @media (min-width: 767px) {
+      display: flex;
+      align-items: baseline;
+      text-align: center;
+    }
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }
