@@ -10,6 +10,7 @@
 .team {
   &__title {
     text-align: center;
+    margin-bottom: 30px;
 
     font-weight: 700;
     font-size: 28px;
@@ -21,7 +22,6 @@
 
       font-size: 36px;
       line-height: 42px;
-      margin-bottom: 30px;
     }
 
     @media (min-width: 1200px) {
@@ -35,26 +35,38 @@
 
   &__list {
     margin: 0 auto;
-    @media (min-width: 767px) {
+    @media (min-width: 767px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
       margin-left: -30px;
       margin-top: -30px;
     }
     @media (min-width: 1200px) {
+      display: flex;
       flex-wrap: nowrap;
+    }
+
+    & .team__card:not(:first-child) {
+      @media (max-width: 780px) {
+        margin-top: 30px;
+      }
+
+      @media (min-width: 1200px) {
+        margin-left: 30px;
+      }
     }
   }
 }
+// , photo1@2x.jpg 2x
 
 .team-container {
-  max-width: 767px;
+  max-width: 480px;
   min-width: 320px;
   @media (min-width: 768px) {
-    max-width: 1199px;
+    max-width: 768px;
   }
   @media (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 
   padding: 60px 15px;
@@ -63,22 +75,22 @@
 }
 
 .team__card {
-  margin-top: 30px;
-
+  text-align: center;
   background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-top: 30px;
   }
+}
 
-  &:not(:first-child) {
-    @media (min-width: 1200px) {
-      margin-left: 30px;
-    }
+.team__list .team__card:not(:first-child) {
+  @media (min-width: 1200px) {
+    margin-left: 30px;
   }
 }
 
@@ -91,7 +103,10 @@
 
   @media (min-width: 1200px) {
     height: 260px;
+    // width: 270px;
   }
+
+  // sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, (min-width: 1200px) 270px"
 
   & img {
     display: block;

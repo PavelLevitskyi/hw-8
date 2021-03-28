@@ -64,6 +64,10 @@
   &__:focus {
     color: $hover-allblue;
   }
+
+  &__link.current {
+    color: $hover-allblue;
+  }
 }
 
 .menu-contacts {
@@ -86,6 +90,7 @@
 
 .menu-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 
   &__links {

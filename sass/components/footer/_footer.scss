@@ -27,7 +27,9 @@
   }
 
   &__position {
-    @media (min-width: 767px) {
+    justify-content: center;
+
+    @media (min-width: 768px) {
       display: flex;
       align-items: baseline;
       text-align: center;

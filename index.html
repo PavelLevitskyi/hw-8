@@ -169,7 +169,7 @@
 
                             <div class="work__tumb">
                                
-                                    <img src="./img/notebook.jpg" alt="box1">
+                                    <img src="./img/notebook.jpg" srcset="./img/notebook.jpg 1x, ./img/notebook@2x.jpg 2x " alt="box1">
                               
                             </div>
 
@@ -185,7 +185,7 @@
 
                             <div class="work__tumb">
                                 
-                                    <img src="./img/phone.jpg" alt="box2">
+                                    <img src="./img/phone.jpg" srcset="./img/phone.jpg 1x, ./img/phone@2x.jpg 2x" alt="box2">
                                
                             </div>
 
@@ -201,7 +201,7 @@
 
                             <div class="work__tumb">
                                 
-                                    <img src="./img/planshet.jpg" alt="box3">
+                                    <img src="./img/planshet.jpg" srcset="./img/planshet.jpg 1x, ./img/planshet@2x.jpg 2x" alt="box3">
                                 
                             </div>
 
@@ -229,8 +229,19 @@
 
                            <div class="team__tumb">
 
-                                <img class="personal-foto" src="./img/photo1.jpg" srcset="./img/photo1.jpg 1x, ./img/photo1@2x 2x .jpg" alt="our-workers">
-                             
+                               <picture>
+                                   <source srcset="./img/photo1-w270.jpg 1x, ./img/photo1-w270@2x.jpg 2x"
+                                   media="(min-width: 1200px)" />
+
+                                   <source srcset="./img/photo1-w450.jpg 1x, ./img/photo1-w450@2x.jpg 2x"
+                                   media="(max-width: 767px)" />
+
+                                   <source srcset="./img/photo1-w354.jpg 1x, ./img/photo1-w354@2x.jpg 2x"
+                                   media="(min-width: 768px)" />
+
+                                    <img class="personal-foto" src="./img/photo1-w270.jpg" alt="our-workers">
+
+                               </picture>
 
                            </div>
 
@@ -295,8 +306,18 @@
                            
                             <div class="team__tumb">
 
-                                <img class="personal__foto" src="./img/photo2.jpg" srcset="./img/photo2.jpg 1x, ./img/photo2@2x 2x .jpg" alt="our-workers">
-                                                               
+                               <picture>
+
+                                    <source srcset="./img/photo2-w270.jpg 1x, ./img/photo2-w270@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    
+                                    <source srcset="./img/photo2-w354.jpg 1x, ./img/photo2-w354@2x.jpg 2x" media="(min-width: 767px)" />
+                                    
+                                    <source srcset="./img/photo2-w450.jpg 1x, ./img/photo2-w450@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img class="personal-foto" src="./img/photo2-w270.jpg" alt="our-workers">
+
+
+                               </picture>
+
                             </div>
 
                             <div class="team__tools">
@@ -360,8 +381,16 @@
 
                             <div class="team__tumb">
 
-                                    <img class="personal-foto" src="./img/photo3.jpg" srcset="./img/photo3.jpg 1x, ./img/photo1@3x 2x .jpg" alt="our-workers">
-                                   
+                                <picture>
+
+                                            <source srcset="./img/photo3-w270.jpg 1x, ./img/photo3-w270@2x.jpg 2x" media="(min-width: 1200px)" />
+                                            
+                                            <source srcset="./img/photo3-w354.jpg 1x, ./img/photo3-w354@2x.jpg 2x" media="(min-width: 767px)" />
+                                            
+                                            <source srcset="./img/photo3-w450.jpg 1x, ./img/photo3-w450@2x.jpg 2x" media="(max-width: 767px)" />
+                                            <img class="personal-foto" src="./img/photo3-w270.jpg" alt="our-workers">
+                                </picture>
+                               
                             </div>     
                             
                             <div class="team__tools">
@@ -424,8 +453,21 @@
                            
                             <div class="team__tumb">
 
-                                <img class="personal-foto" src="./img/photo4.jpg" srcset="./img/photo4.jpg 1x, ./img/photo4@2x 2x .jpg" alt="our-workers">
-                            
+                                <picture>
+                                    <source srcset="./img/photo4-w270.jpg 1x, ./img/photo4-w270@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+
+                                    <source srcset="./img/photo4-w354.jpg 1x, ./img/photo4-w354@2x.jpg 2x"
+                                    media="(min-width: 767px)" />
+
+                                    <source srcset="./img/photo4-w450.jpg 1x, ./img/photo4-w450@2x.jpg 2x"
+                                     media="(max-width: 767px)" />
+
+                                    <img class="personal-foto" src="./img/photo4-w270.jpg" 
+                                        alt="our-workers">
+                                </picture>
+
+                               
                             </div>
 
                             <div class="team__tools">
@@ -707,7 +749,7 @@
 
             <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-            <form action="" class="modal__signup">
+            <form class="modal__signup">
 
                 <div class="modal__container">
 
@@ -810,7 +852,7 @@
 
             <li class="menu-nav__item">
 
-                <a class="menu-nav__link" href="./index.html">Студия</a>
+                <a class="menu-nav__link current" href="./index.html">Студия</a>
             </li>
             <li class="menu-nav__item">
                 
